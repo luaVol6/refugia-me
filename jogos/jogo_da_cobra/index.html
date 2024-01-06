@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    
+<style>
+    
+
+    body{
+        background-color: #13003f;
+        color:white;
+        font-family:" Open Sans";
+        font-size:28px;
+        text-decoration:none;
+    }
+    ::selection {
+    background: rgba(3, 47, 104, 0.815);
+  }
+
+  .corpo {
+    position: relative;
+    background-color: #13003f;
+    margin: 0 auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+   
+    canvas{
+        justify-content: center;
+        box-shadow: rgba(0, 0, 0, 0.596) 20px 10px 50px;
+        width: 500px;
+        height: 500px;
+   }
+   button{
+   background-color: #22016dc4; 
+        border: 3px solid rgb(173, 173, 173);
+        border-radius: 30px;
+        color: silver;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor:pointer;
+        margin-top: 5px;
+        margin-bottom: 55px;
+    } 
+
+button:hover {
+    background-color: #1d005f9c; 
+}
+
+.button {
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+  
+.btn-wrap{
+    position:relative;
+    text-align:center;
+}
+
+.btn-wrap button{
+    position:absolute;
+    z-index:1;
+    top:2%;
+    left:186%;
+    width:20px;               /* largura para o botão */
+    height:20px;              /* altura para o botão */
+    padding:0;
+    margin:-11px 0 0 225px;   /* margem à esquerda e ao topo metade da medida do botão */
+    border-radius: 2%;
+    border-color: #13003f;
+}
+
+.btn-wrap :hover{
+  background-color: #1d005f9c;
+}
+
+.imagem1{
+    height: 100px;
+    height: 100px;
+}
+
+.cima{
+    padding: 0%;
+    margin-top: 0px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.anuncio img {
+    max-width: 80%;
+    height: auto;
+}
+
+.fechar {
+    font-size: 15px;
+    display: block;
+    cursor: pointer;
+    margin-top: 25px;
+}
+</style>
+
+</head>
+<body>
+    
+    <div class="cima">
+        <img class="imagem1" src="img/logo2.png" onclick="history.back()">
+        <h2 align="center">Jogo da Cobra</h2>
+    </div>
+<div class="container">
+    <div class="anuncio" id="anuncio1">
+        <span class="fechar" onclick="fecharAnuncio('anuncio1')">X</span>
+        <img src="img/Story instagram aviso importante feriado moderno azul e branco.png" alt="Anúncio 2">
+    </div>
+    <div class="corpo">
+        <canvas id="game" width="400" height="400" ></canvas>
+         <script src="index.js"></script>
+         <br>
+        </div>
+                <div class="anuncio" id="anuncio2">
+            <span class="fechar" onclick="fecharAnuncio('anuncio2')">X</span>
+            <img src="img/Story instagram aviso importante feriado moderno azul e branco.png" alt="Anúncio 2">
+        </div>
+
+     </div> 
+    <br>
+    <div align="center">
+     <button id="button" hidden onclick="recomecar()" >Reiniciar</button>
+    </div>
+    <script>
+        function recomecar(){
+            window.location.reload();
+        }
+        function fecharAnuncio(id) {
+         var anuncio = document.getElementById(id);
+            if (anuncio) {
+            anuncio.style.display = 'none';
+            }
+        }
+        function ajustarEstiloAposFecharAnuncio() {
+        var corpo = document.querySelector('.corpo');
+             if (corpo) {
+            corpo.style.margin = '0 auto';
+             }
+        }
+    </script>
+</body>
+</html>

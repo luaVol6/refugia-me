@@ -1,0 +1,242 @@
+
+/* POPPINS FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+h5{
+    justify-content: space-between;
+}
+#jogos{
+    color: silver;
+    background-color: #13003f;
+
+}
+
+
+.fundo{
+    padding-top: 60px;
+    padding-block-end: 60px;
+    background-color: #13003f;
+    color: silver;
+}
+
+::selection {
+    background: rgba(192, 192, 192, 0.652);
+    color: rgb(2, 0, 7);
+  }
+
+.logo{
+    width: 75px;
+    height: 75px;
+}
+
+#nav{
+    color: #fff;
+    background: linear-gradient(rgba(0,16,46,0.788), transparent) ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem .75rem;
+    z-index: 100;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+    transition-delay: .2s;
+}
+
+#hamburger{
+    color: #d6d6d6ec;
+}
+
+
+#item {
+    position: relative;
+    color: #fff;
+    text-decoration: none;  
+  }
+  
+  #item:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+  
+  #item:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+
+  .btn-perfil{
+    width: 85px; 
+    height: 45px; 
+    border-radius: 30px;
+    padding: 10px 10px;
+    font-size: 18px;
+    color: #03011d;
+    background: rgba(255, 255, 255, 0.76);
+    border: none;
+}
+.btn-perfil:hover{
+  background: rgba(255, 255, 255, 0.411);
+  
+}
+
+
+.txt-perfil{
+    text-decoration: none;
+    color: #03011d;
+}
+
+.txt-perfil:hover{
+  color: white;
+}
+
+#info-mapa{
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 150px;
+}
+
+.txt-mapa{
+  flex: 1 1 300px;
+  margin: 10px;
+}
+
+#regions_div{
+  position: relative;
+  width: 920px;
+  height: 650px;
+  
+}
+
+
+.content{
+  position: relative;
+}
+
+.content h1 {
+  position: relative;
+  font-size: 120px;
+  color: #ffffff;
+  font-weight: 600;
+  transition: 0.5s;
+  margin-bottom: 0px;
+}
+
+.content h1:hover {
+  -webkit-text-stroke: 2px #fff;
+  color: transparent;
+}
+.content a {
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+  color:#ffffff;
+  font-size: 20px;
+  border: 2px solid #ffffff;
+  padding: 12px 60px;
+  border-radius: 50px;
+  margin-top: 0px;
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.199);
+  z-index: 1;
+}
+
+.link{
+    text-decoration: none;
+}
+
+.link a:hover{
+    color: red;
+}
+.card-group{
+    color: silver;
+    border-radius: 4px;
+    background: #0c0329d6;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+    transition: .5s transform cubic-bezier(.155,1.105,.295,1.12),.5s box-shadow,.5s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    cursor: pointer;
+}
+
+.card{
+    padding: 40px 40px 0px 40px;
+  
+}
+.card-img{
+    border-radius: 25px;
+}
+
+.card:hover{
+    top:-4px;
+    transform: scale(1);
+    box-shadow: 0 10px 20px rgba(25, 19, 133, 0.305), 0 4px 8px rgba(32, 19, 133, 0.305);
+    filter: drop-shadow(15px 8px 5px rgba(49, 19, 133, 0.305));
+    border: 2px solid rgba(6, 0, 63, 0.418);
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #03011d;
+    color: silver;
+    padding: 20px;
+    padding-top: 60px;
+
+  }
+  
+  .coluna {
+    flex: 1 1 300px;
+    margin: 10px;
+  }
+    
+  .redes-sociais {
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+    display: flex;
+  }
+  
+  .redes-sociais li {
+    margin-right: 25px;
+  }
+  
+  .redes-sociais img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .redes-sociais img:hover {
+    transform: scale(1.4);
+  }
+  

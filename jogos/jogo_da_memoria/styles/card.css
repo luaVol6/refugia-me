@@ -1,0 +1,98 @@
+.jogo .card {
+  padding: 30px;
+  margin: 15px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 19vw;
+  height: 180px;
+  border-radius: 0px 10px 0px 10px;
+  user-select: none;
+}
+
+::selection {
+  background: rgba(3, 47, 104, 0.815);
+}
+
+.jogo {
+  align-items: center;
+  padding: 10px;
+  /* margin: 10px; */
+  /* top: 24px; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  background-color: #060e40d2;
+}
+
+.jogo .card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 30px 30px 30px 30px;
+}
+
+.jogo .card,
+.jogo .virado {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.jogo .card {
+  background-color: rgba(8, 51, 114, 0.867);;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.card:active {
+  transform: scale(0.97);
+  transition: transform 0.2s;
+}
+
+.card.flip {
+  transform: rotateY(180deg);
+}
+
+.card.flip[data-nome="Brasil"],
+.card.flip[data-nome="Brasil"] img {
+  background-color: #6fbe5f;
+}
+
+.card.flip[data-nome="Ucrânia"],
+.card.flip[data-nome="Ucrânia"] img {
+  background-color: #63bdd3;
+}
+
+.card.flip[data-nome="Venezuela"],
+.card.flip[data-nome="Venezuela"] img {
+  background-color: #2754ce;
+}
+
+.card.flip[data-nome="Irã"],
+.card.flip[data-nome="Irã"] img {
+  background-color: rgb(199, 57, 57);
+}
+
+.card.flip[data-nome="Paquistão"],
+.card.flip[data-nome="Paquistão"] img {
+  background-color: #0fb850;
+}
+
+.card.flip[data-nome="Turquia"],
+.card.flip[data-nome="Turquia"] img {
+  background-color: #fa6666;
+}
+/* novas */
+
+.frente,
+.verso {
+  width: 100px;
+  height: 100px;
+  padding: 15px;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.frente {
+  transform: rotateY(180deg);
+}

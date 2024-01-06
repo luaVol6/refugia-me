@@ -1,0 +1,425 @@
+/* POPPINS FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+h1{
+    color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    background: url("img/Barco.jpg") no-repeat center fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+header{
+    color: antiquewhite;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 110vh;
+}
+
+/* POPPINS FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+::selection {
+    background: rgba(192, 192, 192, 0.652);
+    color: rgb(2, 0, 7);
+  }
+
+:root{
+    --light-white: #f9f9f9;
+    --white: #fff;
+    --gray: #888;
+    --light-gray: #eee;
+    --dark-black: #081828;
+    --light-black: #666;
+    --footer-text: #D2D6DC;
+}
+
+
+.logo{
+    width: 75px;
+    height: 75px;
+}
+
+#nav{
+    color: #fff;
+    background: linear-gradient(rgba(0,16,46,0.788), transparent) ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem .75rem;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+    transition-delay: .2s;
+}
+
+#hamburger{
+    color: #d6d6d6ec;
+}
+
+
+#item {
+    position: relative;
+    color: #fff;
+    text-decoration: none;  
+  }
+  
+  #item:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+  
+  #item:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+
+
+.btn:hover{
+    background: rgba(255, 255, 255, 0.74);
+}
+#cadastroBtn{
+    margin-left: 10px;
+    background:  rgba(255, 255, 255, 0.74);
+}
+#cadastroBtn:hover{
+    background: rgba(255, 255, 255, 0.411);
+}
+#loginBtn:hover{
+    background: rgba(255, 255, 255, 0.411);
+}
+
+.botoes button{
+    width: 85px;
+    height: 35px;
+    font-weight: 500;
+    color: #03011d;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.76);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+.form-box{
+    position: relative;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 520px;
+    height: 525px;
+    overflow: hidden;
+    z-index: 2;
+    background-color:#01132b85;
+    border-radius: 40px;
+}
+
+
+.half-box{
+    height: 76px;
+    padding-bottom: 0px;
+    margin: 0%;
+}
+
+.login-container{
+    padding-right: 10px;
+    padding-left: 20px;
+    position: absolute;
+    left: 4px;
+    top: 140px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    transition: .5s ease-in-out;
+}
+.cadastrar-container{
+    padding-right: 10px;
+    padding-left: 20px;
+    position: absolute;
+    right: -520px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    transition: .5s ease-in-out;
+}
+.top span{
+    color:antiquewhite;
+    font-size: small;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+.top span a{
+    font-weight: 500;
+    color:antiquewhite;
+    margin-left: 5px;
+}
+.titulo{
+    color: antiquewhite;
+    font-size: 30px;
+    text-align: center;
+}
+
+#input-field{
+    font-size: 12px;
+    background: rgba(255, 255, 255, 0.2);
+    color:antiquewhite;
+    height: 40px;
+    width: 100%;
+    padding: 0 10px 0 45px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    transition: .2s ease;
+}
+#input-field:hover, .input-field:focus{
+    background: rgba(255, 255, 255, 0.25);
+}
+::-webkit-input-placeholder{
+    color:antiquewhite;
+}
+#input-box i{
+    position: relative;
+    top: -30px;
+    left: 17px;
+    color:antiquewhite;
+}
+
+#input-bx i{
+    position: relative;
+    top: -30px;
+    left: 20px;
+    color:antiquewhite;
+}
+.span-required{
+    display: none;
+    font-size: 11px;
+    position: relative;
+    left: 17px;
+    top: -24px;
+    color: antiquewhite;
+  }
+  
+.spanRequiredLog{
+    display: none;
+    font-size: 11px;
+    position: relative;
+    left: 17px;
+    top: -24px;
+    color: antiquewhite;
+  }
+  
+
+.span-txt{
+    margin: 0%;
+    padding: 0%;
+}
+.submit{
+    font-size: 15px;
+    font-weight: 500;
+    height: 45px;
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.7);
+    transition: .3s ease-in-out;
+    margin-top: 4px;
+}
+.submit:hover{
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+}
+.two-col{
+    display: flex;
+    justify-content: space-between;
+    color:antiquewhite;
+    font-size: small;
+    margin-top: 10px;
+}
+.two-col .one{
+    display: flex;
+    gap: 5px;
+}
+
+label{
+    color: antiquewhite;
+}
+.two label a{
+    text-decoration: none;
+    color:antiquewhite;
+}
+.two label a:hover{
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 540px) {
+    .wrapper{
+        min-height: 100vh;
+    }
+    .form-box{
+        width: 100%;
+        height: 500px;
+    }
+    .cadastro-container, .login-container{
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+
+#btn-cad{
+   font-size: 15px;
+    font-weight: 500;
+    height: 45px;
+    width: 430px;
+    border: none;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.7);
+    transition: .3s ease-in-out;
+    margin-top: 4px;
+}
+
+#btn-cad:hover{
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+}
+
+footer{
+    background-color:  #13003f; 
+    color: silver;  
+    text-align: left;
+    font-size: 15px;
+}
+
+.escrita{
+    color: rgb(170, 169, 169);
+    font-size: 15px;
+}
+.escrita:hover{
+    color: rgb(160, 160, 160);
+    font-size: 15px;
+}
+.container-footer{
+    max-width: 1900px;
+    padding: 10 4%;
+    margin: auto;
+}
+.row-footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col{
+    margin-top: 15px;
+    width: 33%;
+    padding: 0 10px;
+}
+.footer-col h4{
+    font-size: 22px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+    text-transform: uppercase;
+}
+.footer-col ul{
+    list-style: none;
+    text-indent: 450px;
+}
+.footer-col ul li{
+    text-indent: 450px;
+    margin: 10px 0;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-indent: 450px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #cecdcd;
+    padding-left: 10px;
+}
+.footer-col .medias-socias{
+    margin-top: 30px;
+}
+.footer-col .medias-socias a{
+    text-indent: 450px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    margin: 0 0px 0px 0;
+    text-decoration: none;
+    border-radius: 50%;
+    color: white;
+    border: 1px solid white;
+    transition: all 0.5s ease;
+}
+.footer-col .medias-socias a i{
+    font-size: 20px;
+
+}
+
+.footer-col .medias-socias a:hover{
+    color: #415aca;
+    background-color: white;
+}
+/* Responsivo */
+@media (max-width: 800px) {
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width:600px) {
+    .footer-col{
+        width: 100%;
+    }
+}

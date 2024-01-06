@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jogo da velha</title>
+    <link rel="stylesheet" type="text/css" href="jogoV.css"/>   
+    </head>
+    <style>
+        .button {
+  border: 2px solid;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration:  #1d005f9c;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+ 
+  border-style: outset;}
+
+
+  .scoreboard{
+    padding-left: 6%;
+    padding-block: 3%;
+    width: 90%;
+}
+.wins,.loss,.draw, span{
+    display: inline-block;
+    color: silver;
+    font-size: 20px;
+    width: 5%;
+    font-family: 'Open sans';
+
+}
+.loss{
+    color: rgb(221, 218, 218);
+ }
+.wins{
+    color: rgb(221, 218, 218);
+ }
+
+  .button:hover {
+  background-color:  #1d005f9c;
+  color:  #1d005f9c;
+}
+.btn-wrap{
+    position:relative;
+    text-align:center;
+}
+.btn-wrap button{
+    position:absolute;
+    z-index:1;
+    top:2%;
+    left:100%;
+    width:20px;               /* largura para o botão */
+    height:20px;              /* altura para o botão */
+    padding:0;
+    margin:-1px 0 0 -132px;   /* margem à esquerda e ao topo metade da medida do botão */
+    border-radius: 2%;
+    
+}
+
+.img{
+    height: 100px;
+    height: 100px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.anuncio img {
+    max-width: 100%;
+    height: auto;
+}
+
+.fechar {
+    display: block;
+    cursor: pointer;
+    margin-top: 5px;
+}
+#x{
+    margin-right: 53%;
+}
+    </style>
+<body>
+    
+    <div>
+        <img class="img" src="img/logo2.png" onclick="history.back()">
+    </div>
+    <div class="container">
+        <div class="anuncio" id="anuncio1">
+            <span class="fechar" onclick="fecharAnuncio('anuncio1')">X</span>
+            <img src="img/Story instagram aviso importante feriado moderno azul e branco.png" alt="Anúncio 2">
+        </div>
+    <div id="jogo">
+             <div id="resultado">Jogo da Velha</div>
+             <br>
+            <div class="linha">
+                <div class="casa" id="casa1"></div>
+                <div class="casa" id="casa2"></div>
+                <div class="casa" id="casa3"></div>
+            </div>
+            <div class="linha">
+                <div class="casa" id="casa4"></div>
+                <div class="casa" id="casa5"></div>
+                <div class="casa" id="casa6"></div>
+            </div>
+            <div class="linha">
+                <div class="casa" id="casa7"></div>
+                <div class="casa" id="casa8"></div>
+                <div class="casa" id="casa9"></div>
+        </div>
+        </div>
+        <div class="anuncio" id="anuncio2">
+            <span class="fechar" onclick="fecharAnuncio('anuncio2')">X</span>
+            <img src="img/Story instagram aviso importante feriado moderno azul e branco.png" alt="Anúncio 2">
+        </div>
+    </div>
+           <br>
+            <div class="scoreboard" align="center">
+                <span class="wins">Vitórias:</span>
+                <div class="wins" id="score-win"></div>     
+                <span class="loss">Derrotas:</span>
+                <div class="loss" id="score-loss"></div>
+                <span>Empates:</span>
+                <div class="draw" id="score-draw"></div>
+            </div>
+            <br>
+            <div align="center">
+            <button id="buttonIA">Maquina: Off</button>
+        </div>
+        <div align="center">
+             <button id="button" hidden onclick="reiniciar()">Reiniciar</button>
+            </div>
+        <div class="anuncio" id="anuncio3" align="center">
+            <span class="fechar" onclick="fecharAnuncio('anuncio3')" id="x">X</span>
+            <img src="img/Design sem nome.png" alt="Anúncio 2">
+        </div>
+        <br>
+          <script src="jogoV.js"></script>
+          <script>
+        function recomecar(){
+            window.location.reload();
+        }
+        function fecharAnuncio(id) {
+         var anuncio = document.getElementById(id);
+            if (anuncio) {
+            anuncio.style.display = 'none';
+            }
+        }
+
+
+    </script>
+</body>
+</html>

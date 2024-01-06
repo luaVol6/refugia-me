@@ -1,0 +1,61 @@
+#vitoria {
+    position: fixed;
+    text-align: center;
+    color: #0047a5;
+    font-family: 'Righteous', cursive;
+    width: 100%;
+    height: 100vh;
+    z-index: 5;
+    background: rgba(0,0,0,0.6);
+    top: 0;
+    display: none;
+}
+
+::selection {
+    background: rgba(3, 47, 104, 0.815);
+  }
+
+
+#vitoria h1 {
+    font-size: 4em;
+    font-weight: normal;
+}
+
+#vitoria h2 {
+    font-size: 2em;
+    margin: 1em;
+}
+
+#vitoria a {
+    text-decoration: none;
+    color: silver;
+    background-color: #023475dc;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 3px solid silver;
+    position: absolute;
+    bottom: calc(20vh + 50px);
+    left: calc(50% - 72px);
+    width: fit-content;
+}
+
+#vitoria a:hover {
+    background-color: silver;
+    border: 3px solid #023475dc;
+    color: #023475dc;
+}
+
+#vitoria p {
+    color: rgb(169, 169, 170);
+}
+
+#vitoria #container {
+    background: rgba(6, 27, 97, 0.747);
+    padding: 50px;
+    width: 80%;
+    height: 60vh;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20vh;
+}
